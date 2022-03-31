@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f3f3f3 !important;
-    height: 200vh;
+    // height: 200vh;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -115,12 +115,19 @@ body{
 
 // NAVBAR ENDS
 
+#content {
+    min-height: calc(100vh - 300px);
+    
+  }
 
 // FOOTER STARTS
 .footer{
-
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color:  v.$footerblue;
     position: relative;
+    height: 220px;
 
 
     &__imgbox{
