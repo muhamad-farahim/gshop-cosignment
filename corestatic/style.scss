@@ -5,8 +5,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f3f3f3 !important;
+    // height: 200vh;
     max-width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 .content{
     position: relative;
@@ -218,10 +220,6 @@ body{
   }
 // FOOTER ENDS
 
-.bignav{
-    display: none;
-}
-
 
 
 
@@ -245,9 +243,12 @@ body{
 
     .bignav{
         display: block;
+        position: sticky;
+        top: 0;
         height: 80px;
         width: 100%;
         background-color: v.$navblue;
+        z-index: 1000;
 
 
         &__link{

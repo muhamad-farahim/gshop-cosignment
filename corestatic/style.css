@@ -4,6 +4,7 @@ body {
   background-color: #f3f3f3 !important;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 .content {
@@ -169,10 +170,6 @@ body {
     width: 250px;
   }
 }
-.bignav {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .overlaynav {
     display: none;
@@ -192,9 +189,12 @@ body {
 
   .bignav {
     display: block;
+    position: sticky;
+    top: 0;
     height: 80px;
     width: 100%;
     background-color: #488FB1;
+    z-index: 1000;
   }
   .bignav__link {
     margin-left: 30px;
