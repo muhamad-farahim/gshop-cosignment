@@ -1,0 +1,21 @@
+.pdetaill{
+
+
+    &__photo{
+
+        height: 600px;
+
+    }
+    &__detail-price, &__detail-variant{
+        height: 290px;
+    }
+    &__detail-variant{
+        margin-top: 20px;
+    }
+
+    &__photolist{
+        width: 100%;
+        height: 120px;
+        margin-top: 20px;
+    }
+}

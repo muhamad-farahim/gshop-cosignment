@@ -1,7 +1,10 @@
 const clickforburgers = document.getElementById('clickburger')
 const dropdown = document.getElementById('dropdownid')
 const overlay = document.getElementById('overlaynav')
+const navlinks = document.querySelectorAll('.bignav__link')
 
+
+console.log(navlinks)
 
 clickforburgers.addEventListener('click', onClickDrop)
 overlay.addEventListener('click', onClickGONE)

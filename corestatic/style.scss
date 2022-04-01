@@ -1,5 +1,9 @@
 @use '../abstract/variables' as v;
 
+p{
+    margin: 0;
+    // display: none;
+}
 
 body{
     margin: 0;
@@ -67,7 +71,7 @@ body{
 }
 
 .dropdownn{
-    position: absolute;
+    position: fixed;
     z-index: 999;
     background-color: v.$navblue;
     height: 70vh;
@@ -112,6 +116,10 @@ body{
         opacity: 1;
     }
 
+}
+
+.bignav{
+    display: none;
 }
 
 // NAVBAR ENDS
@@ -257,6 +265,7 @@ body{
             font-size: 18px;
             cursor: pointer;
             transition: color 200ms;
+            text-decoration: none;
             &:hover{
                 color: darken($color: #ffff, $amount: 20);
             }

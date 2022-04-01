@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -52,7 +56,7 @@ body {
 }
 
 .dropdownn {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   background-color: #488FB1;
   height: 70vh;
@@ -86,6 +90,10 @@ body {
 .overlaynav--active {
   display: block;
   opacity: 1;
+}
+
+.bignav {
+  display: none;
 }
 
 #content {
@@ -202,6 +210,7 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: color 200ms;
+    text-decoration: none;
   }
   .bignav__link:hover {
     color: #cccccc;
