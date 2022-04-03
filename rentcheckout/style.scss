@@ -25,6 +25,12 @@
 
 .rentcheck {
 
+    &__xb {
+        position: absolute;
+        font-size: 30px;
+        right: 10px;
+    }
+
     &__itemlist-details {
 
         text-align: left;
@@ -70,8 +76,8 @@
     }
 
     &__itemlist-totalprice {
-        // display: grid;
-        // justify-content: end;
+        display: grid;
+        justify-content: end;
     }
 
     &__itemlist-grid {
@@ -82,6 +88,7 @@
     &__itembox {
         min-height: 450px;
         border-bottom: 1px solid black;
+        position: relative;
 
     }
 
@@ -273,6 +280,8 @@
 
 @media(max-width : v.$tabletbreakpointxs) {
     .rentcheck {
+
+
 
         &__itemlist-imgbox {
             width: 200px;

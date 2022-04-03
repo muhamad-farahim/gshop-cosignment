@@ -18,6 +18,11 @@
   border: 1px solid black;
 }
 
+.rentcheck__xb {
+  position: absolute;
+  font-size: 30px;
+  right: 10px;
+}
 .rentcheck__itemlist-details {
   text-align: left;
   font-size: 18px;
@@ -44,6 +49,10 @@
 .rentcheck__itemlist-imgbox img {
   height: 100%;
 }
+.rentcheck__itemlist-totalprice {
+  display: grid;
+  justify-content: end;
+}
 .rentcheck__itemlist-grid {
   display: grid;
   grid-template-rows: 1fr 5fr 1fr;
@@ -51,6 +60,7 @@
 .rentcheck__itembox {
   min-height: 450px;
   border-bottom: 1px solid black;
+  position: relative;
 }
 .rentcheck__itemlist {
   min-height: 100px;
