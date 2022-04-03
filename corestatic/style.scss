@@ -1,11 +1,17 @@
-@use '../abstract/variables' as v;
+@use '../abstract/variables'as v;
 
-p{
+p {
     margin: 0;
     // display: none;
 }
 
-body{
+.bignav a,
+.dropdownn a {
+
+    text-decoration: none;
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: #f3f3f3 !important;
@@ -14,63 +20,69 @@ body{
     overflow-x: hidden;
     position: relative;
 }
-.content{
+
+.content {
     position: relative;
     // top: 80px;
     // background-color: beige;
 }
-.blue{
+
+.blue {
     background-color: blue;
 }
 
-.red{
+.red {
     background-color: red;
 }
-.test{
+
+.test {
     margin-bottom: 700px;
 }
-.navbar{
+
+.navbar {
     // display: none;
     position: sticky !important;
     z-index: 1000;
     top: 0px;
     background-color: v.$navblue;
     height: 80px;
-    width: 100% ;
+    width: 100%;
 
-    &__logo{
-        
+    &__logo {
+
         height: 20px;
-        img{
+
+        img {
             height: 100%;
             // width: 100%;
 
         }
     }
 
-    &__burgerdiv{
+    &__burgerdiv {
         display: flex;
     }
 
-    &__burger{
+    &__burger {
 
         height: 20px;
         // display: flex;
         justify-content: end;
-        img{
+
+        img {
             height: 100%;
         }
     }
 
-    &__listitem{
+    &__listitem {
         display: none;
-        
-        
+
+
     }
 
 }
 
-.dropdownn{
+.dropdownn {
     position: fixed;
     z-index: 999;
     background-color: v.$navblue;
@@ -82,22 +94,23 @@ body{
 
     &__items {
 
-        h3{
+        h3 {
             color: #FFF;
         }
 
-        &:active{
+        &:active {
             background-color: darken($color: v.$navblue, $amount: 20);
             // display: fixed;
         }
 
     }
 
-    &--active{
-        top:0;
+    &--active {
+        top: 80px;
     }
 }
-.overlaynav{
+
+.overlaynav {
     position: fixed;
     z-index: 998;
     background-color: rgba($color: (#000000), $alpha: .5);
@@ -111,14 +124,14 @@ body{
     transition-property: display opacity;
 
 
-    &--active{
+    &--active {
         display: block;
         opacity: 1;
     }
 
 }
 
-.bignav{
+.bignav {
     display: none;
 }
 
@@ -126,23 +139,23 @@ body{
 
 #content {
     min-height: calc(100vh - 300px);
-    
-  }
+
+}
 
 // FOOTER STARTS
-.footer{
+.footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color:  v.$footerblue;
+    background-color: v.$footerblue;
     position: relative;
     height: 220px;
 
 
-    &__imgbox{
+    &__imgbox {
         width: 130px;
 
-        img{
+        img {
             width: 100%;
         }
     }
@@ -156,60 +169,66 @@ body{
         grid-template-columns: repeat(3, 1fr);
         margin: 60px 0;
         font-size: 35px;
-    
-        
 
 
-      }
 
-      &__sosm {
+
+    }
+
+    &__sosm {
         position: relative;
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        &::before{
+
+        &::before {
             z-index: 399;
         }
-        &::after {
-          content: '';
-          display: block;
-          width: 60px;
-          height: 60px;
-          background: none;
-          border: 3px solid #fff;
-          border-radius: 50%;
-          transition: 200ms all;
-          position: absolute;
-          left:50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          z-index: -1;
-        }
-  
-        &:nth-child(1):hover::after {
-          background-color: #3b5998;
-        }
-        &:nth-child(2):hover::after {
-          background-color: #e95950;
-        }
-        &:nth-child(3):hover::after {
-          background-color: #00acee;
-        }
-        &:nth-child(1):active::after {
-          background-color: #3b5998;
-        }
-        &:nth-child(2):active::after {
-          background-color: #e95950;
-        }
-        &:nth-child(3):active::after {
-          background-color: #00acee;
-        }
-      }
-     
 
-    &__footer{
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: none;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            transition: 200ms all;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        &:nth-child(1):hover::after {
+            background-color: #3b5998;
+        }
+
+        &:nth-child(2):hover::after {
+            background-color: #e95950;
+        }
+
+        &:nth-child(3):hover::after {
+            background-color: #00acee;
+        }
+
+        &:nth-child(1):active::after {
+            background-color: #3b5998;
+        }
+
+        &:nth-child(2):active::after {
+            background-color: #e95950;
+        }
+
+        &:nth-child(3):active::after {
+            background-color: #00acee;
+        }
+    }
+
+
+    &__footer {
         // height: 10px;
         // padding: 1px;
         width: 100%;
@@ -218,38 +237,40 @@ body{
     }
 
 }
+
 @media (max-width: 380px) {
     .footer {
-      .footer__sosms {
-        width: 250px;
-      }
-    
+        .footer__sosms {
+            width: 250px;
+        }
+
     }
-  }
+}
+
 // FOOTER ENDS
 
 
 
 
-@media(min-width:v.$tabletbreakpointmd){
+@media(min-width:v.$tabletbreakpointmd) {
 
-    .overlaynav{
+    .overlaynav {
         display: none;
     }
 
-    .navbar__burgerdiv{
+    .navbar__burgerdiv {
         display: none !important;
     }
 
-    #dropdownid{
+    #dropdownid {
         display: none;
     }
 
-    .navbar{
+    .navbar {
         display: none !important;
     }
 
-    .bignav{
+    .bignav {
         display: block;
         position: sticky;
         top: 0;
@@ -259,25 +280,26 @@ body{
         z-index: 1000;
 
 
-        &__link{
+        &__link {
             margin-left: 30px;
             color: #fff;
             font-size: 18px;
             cursor: pointer;
             transition: color 200ms;
             text-decoration: none;
-            &:hover{
+
+            &:hover {
                 color: darken($color: #ffff, $amount: 20);
             }
         }
 
-        &__logo{
+        &__logo {
 
             width: 80px;
             height: 100%;
 
 
-            img{
+            img {
                 width: 100%;
             }
         }
@@ -287,14 +309,14 @@ body{
 
 }
 
-@media(min-width: v.$tabletbreakpointlg){
-    .bignav{
+@media(min-width: v.$tabletbreakpointlg) {
+    .bignav {
 
-        &__logo{
+        &__logo {
             width: 120px;
         }
 
-        &__link{
+        &__link {
             font-size: 23px;
             margin-left: 55px;
         }
