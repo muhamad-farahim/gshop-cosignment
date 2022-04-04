@@ -41,22 +41,28 @@ body {
   height: 80px;
   width: 100%;
 }
+
 .navbar__logo {
   height: 20px;
 }
+
 .navbar__logo img {
   height: 100%;
 }
+
 .navbar__burgerdiv {
   display: flex;
 }
+
 .navbar__burger {
   height: 20px;
   justify-content: end;
 }
+
 .navbar__burger img {
   height: 100%;
 }
+
 .navbar__listitem {
   display: none;
 }
@@ -70,12 +76,15 @@ body {
   transition: top 300ms;
   width: 100%;
 }
+
 .dropdownn__items h3 {
   color: #FFF;
 }
+
 .dropdownn__items:active {
   background-color: #2b5468;
 }
+
 .dropdownn--active {
   top: 80px;
 }
@@ -93,6 +102,7 @@ body {
   transition-duration: 300ms;
   transition-property: display opacity;
 }
+
 .overlaynav--active {
   display: block;
   opacity: 1;
@@ -114,12 +124,15 @@ body {
   position: relative;
   height: 220px;
 }
+
 .footer__imgbox {
   width: 130px;
 }
+
 .footer__imgbox img {
   width: 100%;
 }
+
 .footer__sosms {
   display: grid;
   position: relative;
@@ -130,6 +143,7 @@ body {
   margin: 60px 0;
   font-size: 35px;
 }
+
 .footer__sosm {
   position: relative;
   color: #fff;
@@ -137,9 +151,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .footer__sosm::before {
   z-index: 399;
 }
+
 .footer__sosm::after {
   content: "";
   display: block;
@@ -155,24 +171,31 @@ body {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+
 .footer__sosm:nth-child(1):hover::after {
   background-color: #3b5998;
 }
+
 .footer__sosm:nth-child(2):hover::after {
   background-color: #e95950;
 }
+
 .footer__sosm:nth-child(3):hover::after {
   background-color: #00acee;
 }
+
 .footer__sosm:nth-child(1):active::after {
   background-color: #3b5998;
 }
+
 .footer__sosm:nth-child(2):active::after {
   background-color: #e95950;
 }
+
 .footer__sosm:nth-child(3):active::after {
   background-color: #00acee;
 }
+
 .footer__footer {
   width: 100%;
   text-align: center;
@@ -184,6 +207,7 @@ body {
     width: 250px;
   }
 }
+
 @media (min-width: 768px) {
   .overlaynav {
     display: none;
@@ -210,6 +234,7 @@ body {
     background-color: #488FB1;
     z-index: 1000;
   }
+
   .bignav__link {
     margin-left: 30px;
     color: #fff;
@@ -218,21 +243,26 @@ body {
     transition: color 200ms;
     text-decoration: none;
   }
+
   .bignav__link:hover {
     color: #cccccc;
   }
+
   .bignav__logo {
     width: 80px;
     height: 100%;
   }
+
   .bignav__logo img {
     width: 100%;
   }
 }
+
 @media (min-width: 992px) {
   .bignav__logo {
     width: 120px;
   }
+
   .bignav__link {
     font-size: 23px;
     margin-left: 55px;
