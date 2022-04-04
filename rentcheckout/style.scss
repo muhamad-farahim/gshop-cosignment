@@ -229,6 +229,9 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
+    &__linka {
+        text-decoration: none;
+    }
 }
 
 
