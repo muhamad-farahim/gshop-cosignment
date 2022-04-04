@@ -18,6 +18,22 @@
   border: 1px solid black;
 }
 
+.rentcheck__linka {
+  text-decoration: none;
+  color: #000;
+}
+.rentcheck__linka h1 {
+  text-decoration: none;
+  color: #000;
+}
+.rentcheck__linka--wht {
+  text-decoration: none;
+  color: #fff;
+}
+.rentcheck__linka--wht h1 {
+  text-decoration: none;
+  color: #fff;
+}
 .rentcheck__xb {
   position: absolute;
   font-size: 30px;
@@ -122,7 +138,7 @@
 }
 .rentcheck__link--active {
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .rentcheck__linkbox {
   margin: 40px 0;
