@@ -246,7 +246,11 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
+    &__linka {
+        text-decoration: none;
+    }
 }
+
 
 
 @media(max-width: 1200px) {
