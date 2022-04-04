@@ -25,6 +25,30 @@
 
 .rentcheck {
 
+    &__linka {
+        text-decoration: none;
+        color: #000;
+
+        h1 {
+            text-decoration: none;
+            color: #000;
+            // display: none;
+        }
+
+
+        &--wht {
+            text-decoration: none;
+            color: #fff;
+
+            h1 {
+                text-decoration: none;
+                color: #fff;
+                // display: none;
+            }
+        }
+
+    }
+
     &__itemlist-details {
 
         text-align: left;
@@ -172,7 +196,7 @@
 
         &--active {
             font-weight: 400;
-            text-decoration: underline;
+            text-decoration: underline !important;
         }
     }
 
